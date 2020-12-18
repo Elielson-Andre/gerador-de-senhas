@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Password generator</title>
+</head>
+<body>
+    <div class="main">
+        <h1>GERADOR DE SENHAS - online</h1>
+        <p>Obtenha e gerencie senhas seguras para proteger suas contas de maneira rápida e prática.</p>
+            <div class="panel">
+                <div class="iner_panel1">
+                    <h2>Selecione o nível de segurança</h2>
+                    <button id="normal" onclick="nivel('facil')">Normal</button>
+                    <button id="medio" onclick="nivel('medio')">Médio</button>
+                    <button id="maximo" onclick="nivel('max')">Máximo</button>
+                </div>
+
+                <div class="iner_panel2">
+                    <label id="txt1">Texto de auxílio (opcional):</label><br>
+                    <input id="txt_aux" type="text" placeholder="Insira Palavra/ letra/ número/ caractere..">
+
+                    <button id="gerar" onclick="gerando()">GERAR SENHA</button>
+                    <br>
+                    <div id="aviso" class="aviso">
+                        <h3>SENHA GERADA!</h3>
+                        <p>Copie sua senha e guarde em um local seguro.</p>
+                    </div>
+
+                    <h2 id="senha"></h2>
+                </div>
+
+                
+            </div><!--panel-->
+    </div><!--main-->
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>
